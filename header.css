@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  color: white;
+  scroll-padding: 10rem;
+  scroll-behavior: smooth;
+}
+body{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/Mount-Bromo-Tour-From-Malang.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header{
+  height: 180px;
+}
+.navbar{
+  z-index: 1000;
+  padding: 10px;  
+  position: fixed;
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  transition: all .3s ease;
+}
+.navbar-active{
+  background-color: #161A30;  
+  box-shadow: 0 8px 8px rgba(0,0,0,0.4);
+  transition: all .3s ease;
+}
+.menu{
+  margin-right: 10px;
+  display: flex;
+  flex-shrink: 1;
+  width: 100%;
+  justify-content: end;
+  list-style: none;  
+  align-items: center;
+}
+.menu li{
+  display: flex;
+  justify-items: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+  padding: 10px 15px;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+.menu li:hover{
+  background-color: #0050b3;
+  padding: 10px 15px;
+  border-radius: 13px;
+  transition: all .3s ease;
+}
+.menu li a{
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu-bar{
+  display: none;
+}
+.logo{
+  font-size: 40px;
+  font-weight: bold;
+  width: 100%;
+  margin-left: 80px;
+}

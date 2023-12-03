@@ -1,0 +1,500 @@
+@media screen and (max-width: 1180px) {
+  .menu{
+    display: none;    
+  }
+  .menu-bar{
+    display: block;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+  .menu-bar img{
+    width: 25px;
+  }
+  .navbar{
+    align-items: center;
+  }
+  .hero{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: all .3s ease;
+  }
+  #slider{
+    margin-left: 36%;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+  }
+
+  /* Section Paket */
+  .box-content{
+    width: 100%;
+    display: flex;
+    justify-content:start;
+  }
+  .content1, .content2{
+    padding-left: 10px;
+    width: 100%;
+  }
+  .content2{
+    padding-top: 20px;
+  }
+  .paket1 h3, .paket2 h3{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .paket-des{
+    margin-bottom: 20px;
+  }
+  .btn-destinasi{
+    text-decoration: none;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+    color: white;
+    font-weight:bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #0050b3;
+    cursor: pointer;
+  }
+  .btn-destinasi:hover{
+    background-color: rgba(1, 65, 142, 1);
+    transition: all .3s ease;
+  }
+
+  /* About Section */
+
+  .about{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 400px;
+  }
+  .about img{
+    padding: 0;
+    margin-left: 8px;
+    width: 97%;
+  }
+  .desc-about{
+    width: 100%;
+  }
+  .desc-about h1{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .desc-about h1 span{
+    text-decoration: underline solid tomato;
+  }
+  .desc-about p{
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .btn{
+    padding: 7px 25px;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    color: tomato;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: all .5s ease;
+  }
+  .btn1{
+    background-color: tomato;
+    color: #081b29;
+  }
+  .btn:hover{  
+    background-color: tomato;
+    color: #081b29;
+  }
+  .btn1:hover {
+    color: tomato;
+    background-color: transparent;
+  }
+  .button{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  /* Section Destinasi */
+
+  .container{
+    margin-top: 400px;
+    position: relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    width:680px;
+    height:380px;
+    padding:50px;
+    background-color: transparent;
+    box-shadow: 0 30px 50px #000000;
+  }
+  .item{
+    width:130px;
+    height:210px;
+    background-position: 50% 50%;
+    display: inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow:  0 30px 50px #505050;
+  }
+  .item:nth-child(3){
+    left:54%;
+  }
+  .item:nth-child(4){
+    left:calc(54% + 90px);
+  }
+  .item:nth-child(5){
+    left:calc(56% + 180px);
+  }
+  .item:nth-child(n+6){
+    left:calc(54% + 250px);
+    opacity: 0;
+  }
+  .item .content{
+    position: absolute;
+    top:50%;
+    left:40px;
+    width:300px;
+    text-align: left;
+    padding:0;
+    color:#7a4141;
+    transform: translate(0,-50%);
+    display: none;
+    font-family: system-ui;
+  }
+  .item .name{
+    font-size: 30px;
+    font-weight: bold;
+    opacity: 0;
+    animation:showcontent 0.5s ease-in-out 1 forwards
+  }
+
+  /* Footer */
+  .wrap{
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap p, .wrap h2{
+    padding-left: 10px;
+    width: 70%;
+  }
+  .wrap a{
+    margin-left: -120px;
+    text-decoration: none;
+  }
+  .wrap h3{
+    margin-left: -120px;
+  }
+  @media screen and (max-width: 730px) {
+    header{
+      height: 60px;
+    }
+    .logo{
+      font-size: 20px;
+      width: 100%;
+      margin-left: 10px;
+    }
+    .menu-bar img{
+      margin-right: -20px;
+    }
+    .hero{
+      margin-top: 40px;
+    }
+    .box{
+      width: 100%;
+      transition: all .3s ease;
+    }
+    .box h1, .box p{
+      margin-left: -80px;
+      width: 100%;
+    }
+    .box p{
+      margin-top: 20px;    
+    }
+    .box button{
+      margin-left: -80px;
+    }
+    #slider{
+      margin-left: 36%;
+      margin-top: 50px;
+      width: 400px;
+      height: 200px;
+    }
+  
+    /* About Section */
+  
+    .about{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 400px;
+    }
+    .about img{
+      padding: 0;
+      margin-left: 5px;
+      width: 97%;
+    }
+    .desc-about{
+      width: 100%;
+    }
+    .desc-about h1{
+      font-size: 20px;
+    }
+    .desc-about h1 span{
+      text-decoration: underline solid tomato;
+    }
+    .desc-about p{
+      margin-bottom: 10px;
+    }
+    .btn{
+      padding: 7px 25px;
+      border: 2px solid tomato;
+      border-radius: 5px;
+      color: tomato;
+      text-decoration: none;
+      margin-right: 15px;
+      transition: all .5s ease;
+    }
+    .btn1{
+      background-color: tomato;
+      color: #081b29;
+    }
+    .btn:hover{  
+      background-color: tomato;
+      color: #081b29;
+    }
+    .btn1:hover {
+      color: tomato;
+      background-color: transparent;
+    }
+  
+    /* Section Wisata */
+    .paket-wisata{
+      position: relative;
+      height: 1200px;
+      margin-bottom: 400px; 
+    }
+    .btn-box{
+      display: flex;
+      justify-content: center;
+    }
+    .btn-box button{
+      margin-right: 20px;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+    .btn-private, .btn-open{
+      padding: 5px 5px;
+      border: 2px solid tomato;
+      border-radius: 5px;
+      color: tomato;
+      text-decoration: none;
+      margin-right: 15px;
+      transition: all .5s ease;
+      cursor: pointer;
+    }
+    .btn-active{
+      background-color: tomato;
+      color: #081b29;
+    }
+    .btn-off{
+      background-color: transparent;
+      color: tomato;
+    }
+    .paket1, .paket2{
+      width: 100%;  
+      background-color: rgba(8, 27, 41, 0.6);
+      position: absolute;
+      padding-bottom: 20px;
+    }
+    .paket1 ul, .paket2 ul{
+      margin-left: 30px;
+    }
+    .paket1 h3, .paket2 h3{
+      padding-top: 10px;
+      padding-left: 5px;
+      padding-bottom: 10px;
+    }
+    .paket-des{
+      margin-bottom: 20px;
+      padding-left: 10px;
+    }
+    .conten1, .conten2{
+      padding-left: 10px;
+    }
+    .conten2{
+      padding-top: 20px;
+    }
+    .btn-destinasi{
+      text-decoration: none;
+      margin-left: 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      width: fit-content;
+      padding: 10px 20px;
+      color: white;
+      font-weight:bold;
+      border: none;
+      border-radius: 10px;
+      background-color: #0050b3;
+      cursor: pointer;
+    }
+    .btn-destinasi:hover{
+      background-color: rgba(1, 65, 142, 1);
+      transition: all .3s ease;
+    }
+    .box-destinasi{
+      padding-left: 100px;
+    }
+
+      /* Section Destinasi */
+
+    .container{
+      margin-top: 400px;
+      position: relative;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      border-radius: 20px;
+      width:290px;
+      height:210px;
+      padding:50px;
+      background-color: transparent;
+      box-shadow: 0 30px 50px #000000;
+    }
+    .item{
+      width:70px;
+      height:150px;
+      background-position: 50% 50%;
+      display: inline-block;
+      transition: 0.5s;
+      background-size: cover;
+      position: absolute;
+      z-index: 1;
+      top:47%;
+      transform: translate(0,-50%);
+      border-radius: 20px;
+      box-shadow:  0 30px 50px #505050;
+    }
+    .item:nth-child(3){
+      left:54%;
+    }
+    .item:nth-child(4){
+      left:calc(56% + 40px);
+    }
+    .item:nth-child(5){
+      left:calc(56% + 90px);
+    }
+    .item:nth-child(n+6){
+      left:calc(56% + 150px);
+      opacity: 0;
+    }
+    .item .content{
+      position: absolute;
+      top:55%;
+      left:20px;
+      width:160px;
+      text-align: left;
+      padding:0;
+      color:#7a4141;
+      transform: translate(0,-50%);
+      display: none;
+      font-family: system-ui;
+    }
+    .item .name{
+      font-size: 20px;
+      font-weight: bold;
+      opacity: 0;
+      animation:showcontent 0.5s ease-in-out 1 forwards
+    }
+    .item .des{
+      font-size: 10px;
+    }
+    .content button{
+      padding: 3px 10px 5px 10px;
+      font-size: 12px;
+    }
+    .buttons button{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border:1px solid #555;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    #prev img, #next img{
+      width: 10px;
+    }
+
+    /* Section Booking */
+   
+    .booking .box-booking  a{
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: 5px;
+      margin-inline: 5px;
+      text-decoration: none;
+    }
+    .booking .box-booking a i{
+      padding-right: 10px;
+    }
+    
+      /* footer */
+    .footer {
+      margin-top: 20px;
+      padding-top: 10px;
+      background-color: #0050b3;
+    }
+    
+    .footer .box-footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .footer .box-footer .wrap{
+      color: white;
+    }
+    
+    .footer .box-footer .wrap span{
+      font-weight: bold;
+    }
+    .wrap{
+      display: flex;
+      flex-direction: column;
+    }
+    .wrap p, .wrap h2{
+      padding-left: 10px;
+      width: 70%;
+      font-size: 10px;
+    }
+    .wrap h2{
+      font-size: 20px;
+    }
+    .wrap a{
+      font-size: 10px;
+      margin-left: -40px;
+      text-decoration: none;
+    }
+    .wrap h3{
+      margin-left: -40px;
+    }
+  }
+}
+
+
+

@@ -1,0 +1,513 @@
+/* Hero Section */
+.hero{
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 300px;
+}
+
+.box{
+  margin-left: 120px;
+  width: 60%;
+  transition: all .3s ease;
+}
+.box h1{
+  align-items: center;
+}
+.box p{
+  margin-top: 20px;
+  width: 65%;
+}
+.btn-selengkapnya{
+  margin-top: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: white;
+  font-weight:bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #0050b3;
+  cursor: pointer;
+}
+.btn-selengkapnya:hover{
+  background-color: rgba(0, 80, 179, 0.6);
+  transition: all .3s ease;
+}
+
+#slider{
+  display: flex;
+  justify-content: end;
+  position: relative;
+  width: 400px;
+  height: 250px;
+  font-family: 'Helvetica Neue', sans-serif;
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+input[type=radio] {
+  display: none;
+  position: relative;
+  top: 80%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+
+input[type=radio]:nth-child(5) {
+  margin-right: 0px;
+}
+input[type=radio]:checked {
+  opacity: 1;
+}
+
+#slider label,
+#slider label img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: end;
+  transition: transform 400ms ease;
+}
+
+
+
+/* Slider Functionality */
+/* Active Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3 {
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(33.333%, 0, -100px);
+}
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(66.666%, 0, -200px); /* Adjusted translate3d value */
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2 {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+  transform: translate3d(-33.333%, 0, -100px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide1 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-11.111%, 0, -200px); /* Adjusted translate3d value */
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transform: translate3d(-60%, 0, -200px);
+}
+
+/* Center the images within the slides */
+#slide1 img,
+#slide2 img,
+#slide3 img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+/* About Section */
+
+.about{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 400px;
+}
+.about img{
+  padding-left: 120px;
+  padding-right: 20px;
+  width: 25%;
+}
+.desc-about{
+  width: 100%;
+}
+.desc-about h1{
+  font-size: 50px;
+}
+.desc-about h1 span{
+  text-decoration: underline solid tomato;
+}
+.desc-about p{
+  margin-bottom: 20px;
+}
+.btn{
+  padding: 7px 25px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  color: tomato;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: all .5s ease;
+}
+.btn1{
+  background-color: tomato;
+  color: #081b29;
+}
+.btn:hover{  
+  background-color: tomato;
+  color: #081b29;
+}
+.btn1:hover {
+  color: tomato;
+  background-color: transparent;
+}
+
+
+/* Paket Wisata Section */
+.paket-wisata{
+  position: relative;
+  height: 1000px;
+  margin-top: 300px;
+  margin-bottom: 400px; 
+}
+.btn-box{
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+.btn-box button{
+  margin-right: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.btn-private, .btn-open{
+  padding: 7px 25px;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  color: tomato;
+  text-decoration: none;
+  margin-right: 15px;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.btn-active{
+  background-color: tomato;
+  color: #081b29;
+}
+.btn-off{
+  background-color: transparent;
+  color: tomato;
+}
+.paket1, .paket2{
+  width: 100%;  
+  background-color: rgba(8, 27, 41, 0.6);
+  position: absolute;
+  padding-bottom: 20px;
+}
+.paket1 ul, .paket2 ul{
+  margin-left: 20px;
+}
+.paket1 h3, .paket2 h3{
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+}
+.box-content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+}
+.keterangan{
+  padding-top: 20px;
+}
+.paket-des{
+  margin-bottom: 20px;
+}
+.btn-destinasi{
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  color: white;
+  font-weight:bold;
+  border: none;
+  border-radius: 10px;
+  background-color: #0050b3;
+  cursor: pointer;
+}
+.btn-destinasi:hover{
+  background-color: rgba(1, 65, 142, 1);
+  transition: all .3s ease;
+}
+.paket-off{
+  display: none;
+}
+.paket-active{
+  display: block;
+}
+.box-destinasi{
+  padding-left: 130px;
+}
+
+
+/* Destinasi Section */
+
+.container{
+  margin-top: 400px;
+  position: relative;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  border-radius: 20px;
+  width:1000px;
+  height:600px;
+  padding:50px;
+  background-color: transparent;
+  box-shadow: 0 30px 50px #000000;
+}
+#slide{
+  width:max-content;
+  margin-top:50px;
+}
+.item{
+  width:200px;
+  height:300px;
+  background-position: 50% 50%;
+  display: inline-block;
+  transition: 0.5s;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  top:50%;
+  transform: translate(0,-50%);
+  border-radius: 20px;
+  box-shadow:  0 30px 50px #505050;
+}
+.item:nth-child(1),
+.item:nth-child(2){
+  left:0;
+  top:0;
+  transform: translate(0,0);
+  border-radius: 0;
+  width:100%;
+  height:100%;
+  box-shadow: none;
+}
+.item:nth-child(3){
+  left:54%;
+}
+.item:nth-child(4){
+  left:calc(54% + 120px);
+}
+.item:nth-child(5){
+  left:calc(54% + 250px);
+}
+.item:nth-child(n+6){
+  left:calc(54% + 290px);
+  opacity: 0;
+}
+.item .content{
+  position: absolute;
+  top:50%;
+  left:100px;
+  width:300px;
+  text-align: left;
+  padding:0;
+  color:#7a4141;
+  transform: translate(0,-50%);
+  display: none;
+  font-family: system-ui;
+}
+.item:nth-child(2) .content{
+  display: block;
+  z-index: 99;
+}
+.item .name{
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0;
+  animation:showcontent 0.5s ease-in-out 1 forwards
+}
+.item .des{
+  margin:20px 0;
+  opacity: 0;
+  animation:showcontent 0.5s ease-in-out 0.3s 1 forwards
+}
+.item button{
+  padding:10px 20px;
+  border:none;
+  opacity: 0;
+  animation:showcontent 0.5s ease-in-out 0.3s 1 forwards
+}
+@keyframes showcontent{
+  from{
+      opacity: 0;
+      transform: translate(0,100px);
+      filter:blur(33px);
+  }to{
+      opacity: 1;
+      transform: translate(0,0);
+      filter:blur(0);
+  }
+}
+.buttons{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom:30px;
+  z-index: 100;
+  text-align: center;
+  width:90%;
+}
+.buttons button{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border:1px solid #555;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.content button{
+  background-color: #0050b3;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.content button:hover{
+  background-color: rgb(1, 65, 142);
+  transition: all .3s ease;
+}
+#next, #prev{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  background-color: #0050b3;
+  cursor: pointer;
+}
+#next:hover, #prev:hover{
+  background-color: rgb(1, 65, 142);
+  transition: all .3s ease;
+}
+
+
+/* Booking Section */
+
+.booking{
+  padding-top: 50px 0 100px 0; 
+}
+.booking .box-booking {
+   color: white;
+   text-align: center;
+}
+
+.booking .box-booking h1{
+   margin-bottom: 50px;
+}
+
+.booking .box-booking h3 {
+   font-weight: 400;
+   margin-bottom: 10px;
+   animation: animasi;
+   -webkit-animation: animasi 2s infinite;
+}
+
+@keyframes animasi {
+   0% {
+       transform: scale(0.8);
+   }
+   50% {
+       transform: scale(1);
+   }
+   100% {
+       transform: scale(0.8);
+   }
+}
+
+
+.booking .box-booking a{
+   border: none;
+   min-width: 100px;
+   min-height: 40px;
+   border-radius: 5px;
+   cursor: pointer;
+   background-color: #053e83;
+   color: white;
+   padding-inline: 10px;
+}
+
+.booking .box-booking  a{
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 5px;
+  margin-inline: 5px;
+  text-decoration: none;
+}
+.booking .box-booking a i{
+  padding-right: 10px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #0050b3;
+}
+
+.footer .box-footer {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer .box-footer .wrap{
+  color: white;
+}
+
+.footer .box-footer .wrap span{
+  font-weight: bold;
+}
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
+.wrap p, .wrap h2{
+  width: 70%;
+  padding-left: 20px;
+}
+.wrap a{
+  margin-left: -190px;
+  text-decoration: none;
+}
+.wrap h3{
+  margin-left: -190px;
+}

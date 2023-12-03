@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!--Font Poppins-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+          <p>Nama Website</p>
+      </div>
+      <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#paket-wisata">Paket Wisata</a></li>
+          <li><a href="#sewa-jeep">Sewa Jeep</a></li>
+          <li><a href="#destinasi">Destinasi</a></li>
+          <li><a href="#booking">Booking</a></li>
+      </ul>
+      <a class="menu-bar"><img src="img/icon/bars-solid.svg" alt=""></a>
+    </div>
+  </header>
+  <!--section hero-->
+  <div class="hero">
+    <div class="box">
+      <h1>Bromo Pilihan Terbaik <br>
+          Liburan Bersama Keluarga
+      </h1>
+      <p>Gunung Bromo adalah salah satu tempat wisata alam 
+        terbaik yang ada di Jawa Timur.
+      </p>
+      <button class="btn-selengkapnya">Selengkapnya</button>
+    </div>
+    <div id="slider">
+        <input type="radio" name="slider" id="s1" checked>
+        <input type="radio" name="slider" id="s2">
+        <input type="radio" name="slider" id="s3">
+  
+        <label for="s1" id="slide1"><img src="img/hero/img1.jpg" alt=""></label>
+        <label for="s2" id="slide2"><img src="img/hero/img2.png" alt=""></label>
+        <label for="s3" id="slide3"><img src="img/hero/img3.png" alt=""></label>
+    </div>
+  </div>  
+  
+  
+  <!--Section About-->
+  <div id="about">
+    <div class="about" >
+      <img src="img/ABOUT.png">
+      <div class="desc-about">
+        <h1 id="about"><span>About</span> Us</h1> 
+        <p>
+          Nama Website adalah biro perjalanan dan jasa pariwisata mengunjungi destinasi wisata menarik di Indonesia terutama Gunung Bromo, Kota Malang dan Batu, Banyuwangi,
+          Komodo Labuan bajo yang memberikan pelayanan optimal yang didukung oleh SDM yang berkompeten dan berpengalaman melayani turis lokal maupun mancanegara..
+        </p>
+        <div class="button">
+          <a href="#" class="btn btn1">In Me</a>
+          <a href="Jadwal_Trip.html" class="btn btn2">Jadwal Trip Bromo</a>
+        </div>
+      </div>
+    </div>
+  </div>   
+
+  <!--Section Paket Wisata -->
+  <div id="paket-wisata" class="paket-wisata">
+    <div class="btn-box">
+      <button class="btn-private btn-active">Private Trip</button>
+      <hr>
+      <button class="btn-open btn-off">Open Trip</button>
+    </div>
+    <div class="paket1">
+      <h3>Paket Private Trip Bromo Start Malang</h3>
+      <div class="box-content">
+        <div class="content1">
+          <p>Detail: </p>
+          <ul>
+            <li>IDR 1.350.000 (Non Dokumentasi)</li>
+            <li>IDR 1.550.000 (Plus Dokumentasi)</li>
+            <li>IDR 1.650.000 (Doc Photo & Video)</li>
+            <li>IDR 2.250.000 (Doc Photo, Video & Drone)</li>
+          </ul>
+          <p class="keterangan">Keterangan:</p>
+          <ul>
+            <li>Bebas pilih tanggal keberangkatan</li>
+            <li>Berangkat setiap hari</li>
+            <li>Harga untuk 1 grup</li>
+            <li>Paket max. untuk 2-6 orang peserta trip</li>
+            <li>Diskon IDR 200.000 (Meet Point Basecamp Jeep)</li>
+            <li>Lokasi Basecamp 15-30 menit dari pusat Kota Malang</li>
+          </ul>
+          <div class="paket-des">
+            <p>Destinasi :</p>
+            <p>Sunrise Point, Bukit Widodaren, Gunung Batok, <br>Pura Luhur Ponten, Kawah Bromo, Pasir Berbisik, Bukit Teletubies, Padang Savana</p>
+          </div>
+          <a class="btn-destinasi" href="#destinasi">Detil Destinasi</a> 
+        </div>
+        <div class="content2">
+          <p>Fasilitas:</p>
+          <ul>
+            <li>Mobil antar jemput PP Kota Malang</li>
+            <li>Jeep Hardtop Bromo</li>
+            <li>Harga sudah termasuk BBM, Parkir, dan Retribusi</li>
+            <li>Driver Professional</li>
+            <li>Guide Lokal</li>
+            <li>Photographer (Paket Plus Dokumentasi)</li>
+            <li>Videographer (Paket Plus Doc Photo & Video)</li>
+            <li>Unit Drone (Paket Plus Drone)</li>
+            <li>Pilot Drone (Paket Plus Drone)</li>
+            <li>Photo Unlimited sepuasnya (Paket Plus Dokumentasi)</li>
+            <li>Share All Photo Files</li>
+            <li>Video Cinematic 1 menit</li>
+            <li>Rumah Transit</li>
+            <li>Tiket Wisata Semua Destinasi</li>
+          </ul>
+        </div>
+      </div>   
+    </div>
+    <div class="paket2 paket-off">
+      <h3>Paket Open Trip Bromo</h3>
+      <div class="box-content">
+        <div class="content1">
+          <p>Detail: </p>
+          <ul>
+            <li>IDR 250.000 (Non Dokumentasi)</li>
+            <li>IDR 300.000 (Plus Dokumentasi)</li>
+          </ul>
+          <p class="keterangan">Keterangan:</p>
+          <ul>
+            <li>Bebas pilih tanggal keberangkatan</li>
+            <li>Berangkat setiap hari</li>
+            <li>Tanpa minimal peserta</li>
+            <li>1 orang bisa mendafta</li>
+            <li>Lokasi Basecamp 15-30 menit dari pusat Kota Malang</li>
+          </ul>
+          <div class="paket-des">
+            <p>Destinasi :</p>
+            <p>Sunrise Point, Bukit Widodaren, Gunung Batok, <br>Pura Luhur Ponten, Kawah Bromo, Pasir Berbisik, Bukit Teletubies, Padang Savana</p>
+          </div>
+          <a class="btn-destinasi" href="#destinasi">Detil Destinasi</a>
+        </div>
+        <div class="content2">
+          <p>Fasilitas:</p>
+          <ul>
+            <li>Mobil antar jemput PP Kota Malang</li>
+            <li>Jeep Hardtop Bromo</li>
+            <li>Harga sudah termasuk BBM, Parkir, dan Retribusi</li>
+            <li>Guide Lokal</li>
+            <li>Photographer (Paket Plus Dokumentasi)</li>
+            <li>Videographer (Paket Plus Doc Photo & Video)</li>
+            <li>Share All Photo Files</li>
+            <li>Rumah Transit</li>
+            <li>Tiket Wisata Semua Destinasi</li>
+          </ul>
+        </div>
+      </div>   
+    </div>
+  </div>
+
+  <!-- Section Sewa Jeep -->
+  <!-- Section Destinasi -->
+  <div id="destinasi" class="destinasi">
+    <div class="container">
+      <div id="slide">
+        <div class="item" style="background-image: url(img/dest/DTS1.jpeg);">
+        <div class="content">
+            <div class="name">Padang Savana</div>
+            <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In beatae sapiente corrupti sint repudiandae non iusto labore aperiam hic? Eligendi minima maxime quisquam impedit et? Nesciunt iste explicabo maiores numquam.</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS2.jpeg);">
+          <div class="content">
+            <div class="name">Bukit Widodaren</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repellendus ex aperiam labore unde tempore eum iure magnam commodi neque sunt ipsum vel dolorum itaque, eos beatae, est dolor atque!</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS3.jpeg);">
+          <div class="content">
+            <div class="name">Gunung Batok</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quo labore, enim iste explicabo magnam? Quam quasi, itaque ab expedita excepturi possimus repellat debitis magnam maiores iusto voluptas incidunt fugiat.</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS4.jpeg);">
+          <div class="content">
+            <div class="name">Pura Luhur Poten</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis cupiditate architecto rerum esse amet sunt, quibusdam enim aspernatur, cum ipsam omnis dignissimos provident magnam, excepturi exercitationem? Quae nam provident cupiditate.</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS5.jpeg);">
+          <div class="content">
+            <div class="name">Kawah Bromo</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta voluptate porro quam. Sed doloremque eum fugiat blanditiis molestias ipsa, id minus eligendi eaque ullam. Unde ducimus a libero omnis.</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS6.jpeg);">
+          <div class="content">
+            <div class="name">Pasir Berbisik</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium quasi praesentium voluptatum culpa inventore excepturi? Voluptatem, facilis alias facere sint doloribus ipsa possimus natus, quaerat dignissimos veniam laborum, quas quos?</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS7.jpeg);">
+          <div class="content">
+            <div class="name">Bukit Teletubies</div>
+            <div class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quaerat consequuntur odit debitis labore perspiciatis deserunt et quam accusantium rerum saepe voluptatem commodi id, quae, voluptatum voluptatibus in inventore iure.</div>
+            <button>See more</button>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/dest/DTS8.jpeg);">
+          <div class="content">
+            <div class="name"></div>
+            <div class="des"></div>
+            <button>See more</button>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="prev"><img src="img/icon/angle-left-solid.svg" alt=""></button>
+        <button id="next"><img src="img/icon/angle-right-solid.svg" alt=""></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section Booking -->
+  <div class="booking" id="booking">
+      <div class="box-booking">
+        <h1>Ingin Berlibur?<br>Segera Daftarkan Keluarga Anda!</h1>
+        <h3>Klik Link Form di Bawah Ini !</h3></a><br>
+        <a><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+        <a href="FormBooking.html"><i class="fa-regular fa-envelope"></i>Gmail</a>
+        <a href="FormBooking.html" target="_blank"><i class="fa-regular fa-clipboard"></i>Google Form</a>
+      </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="box-footer">
+      <div class="wrap">
+        <h2>Nama Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Fugit voluptate possimus hic, consectetur 
+        id at voluptatibus quaerat voluptatum quo vero.</p>
+      </div>
+      <div class="wrap">
+        <h3>Menu</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#destinasi">Destinasi</a>
+          <a href="#booking">Booking</a>
+      </div>
+      <div class="wrap">
+        <p>&copy; Copyright by <span>Nama Website</span> 
+        All Rights Reserved 2023, Indonesia</p>
+      </div>
+    </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
